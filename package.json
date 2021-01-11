@@ -1,0 +1,16 @@
+{
+  "name": "cargarageapp",
+  "version": "1.0.0",
+  "description": "PPW2 - Car Garage Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://raemurtagh@bitbucket.org/raemurtagh/cargarageapp.git"
+  },
+  "author": "Rachael Murtagh",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/raemurtagh/cargarageapp#readme"
+}
