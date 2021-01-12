@@ -1,0 +1,7 @@
+{
+    "name": "Car Sales Dealership - The Little Hill Top Garage",
+    "short_name": "The Little Hill Top Garage",
+    "lang": "en",
+    "start_url": "/",
+    "display": "standalone"
+}
