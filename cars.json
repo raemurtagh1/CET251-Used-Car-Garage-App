@@ -1,0 +1,49 @@
+[
+    {
+        "Name": "Vauxhall Zafira Life",
+        "Year": "2007",
+        "Price": "£2995",
+        "Mileage": "42,000 miles",
+        "Fuel-Type": "Petrol",
+        "Engine-Size": "1.6",
+        "Colour": "Gold",
+        "Gearbox": "Manual",
+        "Doors": "5"
+    },
+
+    {
+        "Name": "Smart ForTwo Passion",
+        "Year": "2009",
+        "Price": "£4495",
+        "Mileage": "23,000 miles",
+        "Fuel-Type": "Petrol",
+        "Engine-Size": "0.9",
+        "Colour": "Grey",
+        "Gearbox": "Automatic",
+        "Doors": "2"
+    },
+
+    {
+        "Name": "Renault Kadjar TCE Dynamique S130",
+        "Year": "2017",
+        "Price": "£14,995",
+        "Mileage": "11,000 miles",
+        "Fuel-Type": "Petrol",
+        "Engine-Size": "1.2",
+        "Colour": "White",
+        "Gearbox": "Manual",
+        "Doors": "5"
+    },
+
+    {
+        "Name": "Mercedes B180 CDi AMG Line",
+        "Year": "2015",
+        "Price": "£11,995",
+        "Mileage": "51,000 miles",
+        "Fuel-Type": "Diesel",
+        "Engine-Size": "1.5",
+        "Colour": "Black",
+        "Gearbox": "Automatic",
+        "Doors": "5"
+    }
+]
