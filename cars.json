@@ -45,5 +45,30 @@
         "Colour": "Black",
         "Gearbox": "Automatic",
         "Doors": "5"
+    },
+
+    {
+        "Name": "Mini One 1.6 D",
+        "Year": "2011",
+        "Price": "£4995",
+        "Mileage": "74,000 miles",
+        "Fuel-Type": "Diesel",
+        "Engine-Size": "1.6",
+        "Colour": "Red",
+        "Gearbox": "Manual",
+        "Doors": "5"
+    },
+
+    {
+        "Name": "Toyota Aygo X-Play",
+        "Year": "2014",
+        "Price": "£5995",
+        "Mileage": "26,500 miles",
+        "Fuel-Type": "Petrol",
+        "Engine-Size": "1.0",
+        "Colour": "Silver",
+        "Gearbox": "Manual",
+        "Doors": "3"
     }
+
 ]
