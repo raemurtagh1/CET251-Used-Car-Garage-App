@@ -18,6 +18,26 @@
     <!-- Including the Ratchet JavaScript file -->
     <script src="ratchet-v2.0.2/js/ratchet.js"></script>
 
+    <style>
+        .content
+        {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        #Labels
+        {
+            font-size: 20px;
+            color: black;
+        }
+
+        #description
+        {
+            font-size: 16px;
+            color: black;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -33,5 +53,29 @@
         <!-- Tab for loan calculator-->
         <a class="tab-item active" href="LoanCalculator.html">Loan calculator</a>
     </nav>
+
+    <div class="content">
+        <br>
+        <form>
+            <p id="description">Welcome to the Loan Repayment Calculator! <br>
+            Here is where you can work out how much it would cost to take out a loan for your car with us. <br>
+            Below using only numbers, please enter the amount you are looking to borrow, how many months you would like to pay it 
+            back for and the interest rate. <br> <br> </p>
+
+            <p id="Labels">Amount</p>
+            <input type="text" placeholder="e.g. £2456">
+            <br> <br>
+
+            <p id="Labels">Months</p>
+            <input type="text" placeholder="e.g. 12">
+            <br> <br>
+
+            <p id="Labels">Interest</p>
+            <input type="text" placeholder="e.g. 4%">
+            <br> <br>
+
+            <button class="btn btn-positive btn-block">Calculate</button>
+          </form>
+    </div>
 </body>
 </html>
