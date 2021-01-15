@@ -4,58 +4,64 @@
     "lang": "en",
     "start_url": "/",
     "display": "standalone",
+    "background-color": "white",
+    "theme-color": "white",
     "icons": [
         {
-            "src": "images/Car image 1 - small icon version",
-            "sizes": "60x60"
+            "src": "icons/192x192 car1",
+            "sizes": "192x192"
         },
         {
-            "src": "images/Car image 2 - small icon version",
-            "sizes": "60x60"
+            "src": "icons/192x192 car2",
+            "sizes": "192x192"
         },
         {
-            "src": "images/Car image 3 - small icon version",
-            "sizes": "60x60"
+            "src": "icons/192x192 car3",
+            "sizes": "192x192"
         },
         {
-            "src": "images/Car image 4 - small icon version",
-            "sizes": "60x60"
+            "src": "icons/192x192 car4",
+            "sizes": "192x192"
         },
         {
-            "src": "images/Car image 5 - small icon version",
-            "sizes": "60x60"
+            "src": "icons/192x192 car5",
+            "sizes": "192x192"
         },
         {
-            "src": "images/Car image 6 - small icon version",
-            "sizes": "60x60"
+            "src": "icons/192x192 car6",
+            "sizes": "192x192"
         },
         {
-            "src": "images/Car image 1 - pic for detail page",
-            "sizes": "330x330"
+            "src": "icons/512x512 car1",
+            "sizes": "512x512"
         },
         {
-            "src": "images/Car image 2 - pic for detail page",
-            "sizes": "330x330"
+            "src": "icons/512x512 car2",
+            "sizes": "512x512"
         },
         {
-            "src": "images/Car image 3 - pic for detail page",
-            "sizes": "330x330"
+            "src": "icons/512x512 car3",
+            "sizes": "512x512"
         },
         {
-            "src": "images/Car image 4 - pic for detail page",
-            "sizes": "330x330"
+            "src": "icons/512x512 car4",
+            "sizes": "512x512"
         },
         {
-            "src": "images/Car image 5 - pic for detail page",
-            "sizes": "330x330"
+            "src": "icons/512x512 car5",
+            "sizes": "512x512"
         },
         {
-            "src": "images/Car image 6 - pic for detail page",
-            "sizes": "330x330"
+            "src": "icons/512x512 car6",
+            "sizes": "512x512"
         },
         {
-            "src": "images/pexels-cottonbro-4488643",
-            "sizes": "375x668"
+            "src": "icons/192x192 front image",
+            "sizes": "192x192"
+        },
+        {
+            "src": "icons/512x512 front image",
+            "sizes": "512x512"
         }
     ]
 }
