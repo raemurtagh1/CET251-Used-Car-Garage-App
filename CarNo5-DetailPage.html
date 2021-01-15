@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Mini One 1.6 D - Information page">
+    <meta name="keywords" content="Car, Garage, Used, For Sale, Mini, Information">
+    <meta name="author" content="Rachael Murtagh">
+
     <!-- Title of the page -->
     <title>The Little Hill Top Garage - Car 5 page</title>
 
@@ -21,6 +25,19 @@
     <!-- Including JQuery-->
     <script src= "https://code.jquery.com/jquery-3.5.1.js"> </script> 
 
+    <!-- Adding styles to the image of the car-->
+    <style>
+        img
+        {
+            display: block; 
+            margin-left: auto; 
+            margin-right: auto; 
+            margin-top: 20px; 
+            border: 3px solid black;
+        }
+    </style>
+
+    <!-- Adding styles to the details of the car-->
     <style>
         #myData
         {
@@ -31,16 +48,19 @@
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
     </style>
-
 </head>
 
 <body>
+    <!-- Adding a title bar-->
     <header class="bar bar-nav">
+        <!-- Making the back button go back to the ListOfCars page-->
         <a class="icon icon-left-nav pull-left" onclick="window.location.href='ListOfCars.html'"></a>
+         <!-- Title within the title bar-->
         <h1 class="title">Mini One 1.6 D</h1>
     </header>
     <div class="content">
-        <img src="/images/Car image 5 - pic for detail page.jpg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 20px; border: 3px solid black;">
+        <!-- Adding an image of the car to the detail page-->
+        <img src="/images/Car image 5 - pic for detail page.jpg" alt="Mini One 1.6 D car image in car park">
 
     <!-- Creating a div tag to allow the data to appear as text-->
     <div id="myData"></div>
