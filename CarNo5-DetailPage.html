@@ -18,6 +18,9 @@
     <!-- Including the Ratchet JavaScript file -->
     <script src="ratchet-v2.0.2/js/ratchet.js"></script>
 
+    <!-- Including JQuery-->
+    <script src= "https://code.jquery.com/jquery-3.5.1.js"> </script> 
+
 </head>
 
 <body>
@@ -27,6 +30,32 @@
     </header>
     <div class="content">
         <img src="/images/Car image 5 - pic for detail page.jpg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 20px; border: 3px solid black;">
+
+    <!-- Creating a div tag to allow the data to appear as text-->
+    <div id="myData"></div>
+    <script>
+        $(document).ready(function () { 
+  
+        // Fetching data from a JSON file
+        $.getJSON("cars.json", function (data) 
+        { 
+            var cars = '';
+        
+            // Adding each piece of detail of the car from the JSON file  
+            $.each(data, function (key, value) 
+            { 
+                cars += 'Name - ' + value.Name5 + '<br>' + 'Year - ' + value.Year5 + '<br>' + 
+                'Price - ' + value.Price5 + '<br>' + 'Mileage - ' + value.Mileage5 + '<br>' + 
+                'Fuel type - ' + value.FuelType5 + '<br>' + 'Engine Size - ' + value.EngineSize5 + '<br>' + 
+                'Colour - ' + value.Colour5 + '<br>' + 'Gearbox - ' + value.Gearbox5 + '<br>' + 
+                'Doors - ' + value.Doors5 + '<br>';
+            }); 
+
+            // Appending the data to the document  
+             $('#myData').append(cars); 
+        }); 
+        }); 
+    </script>
     </div>
 </body>
 </html>
