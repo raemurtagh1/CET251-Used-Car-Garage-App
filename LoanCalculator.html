@@ -18,6 +18,7 @@
     <!-- Including the Ratchet JavaScript file -->
     <script src="ratchet-v2.0.2/js/ratchet.js"></script>
 
+    <!-- Added a padding on the content within the page, changed the label and description - font size and colour -->
     <style>
         .content
         {
@@ -54,28 +55,62 @@
         <a class="tab-item active" href="LoanCalculator.html">Loan calculator</a>
     </nav>
 
+    <script>
+        // Added a function called calculate
+        function calculate()
+        {
+            // New variable that gets the labelamount value
+            let txtAmount = document.getElementById("LabelAmount").value;
+            // New variable that gets the labelmonths value
+            let txtMonths = document.getElementById("LabelMonths").value;
+            // New variable that gets the labelinterest value
+            let txtInterest = document.getElementById("LabelInterest").value;
+
+            // New variable that gets the txtamount and multiples it by the interest - 
+            // the interest is divided by 100 first
+            let AmountofInterest = txtAmount * (txtInterest / 100);
+            // New variable that gets txtamount and added it to the amountofinterest
+            let AmountWithInterest = Number(txtAmount) + Number(AmountofInterest);
+            // New variable that gets the amountwithinterest and divides it by txtmonths
+            let TotalToPayMonthly = AmountWithInterest / txtMonths;
+
+            // Rounding AmountofInterest, AmountwithInterest and TotalToPayMonthly to 2 decimal places
+            AmountofInterest = parseFloat(parseFloat(AmountofInterest).toFixed(2));
+            AmountWithInterest = parseFloat(parseFloat(AmountWithInterest).toFixed(2));
+            TotalToPayMonthly = parseFloat(parseFloat(TotalToPayMonthly).toFixed(2));
+
+            // Displaying the results
+            document.getElementById("Result").innerHTML = "<br>" + "Interest: " + AmountofInterest + "<br> <br>" 
+            + "Amount with interest: " + AmountWithInterest + "<br> <br>" + "Total amount to pay monthly: "
+            + TotalToPayMonthly; 
+        }
+    </script>
+
+    <!-- Creating a content class-->
     <div class="content">
         <br>
         <form>
-            <p id="description">Welcome to the Loan Repayment Calculator! <br>
-            Here is where you can work out how much it would cost to take out a loan for your car with us. <br>
-            Below using only numbers, please enter the amount you are looking to borrow, how many months you would like to pay it 
-            back for and the interest rate. <br> <br> </p>
-
-            <p id="Labels">Amount</p>
-            <input type="text" placeholder="e.g. £2456">
+            <!-- Creating an amount to borrow label and a textbox for the amount-->
+            <p id="Labels">Amount to borrow</p>
+            <input type="text" id="LabelAmount" placeholder="e.g. £2456">
             <br> <br>
 
+            <!-- Creating a months label and a textbox for the number-->
             <p id="Labels">Months</p>
-            <input type="text" placeholder="e.g. 12">
+            <input type="text" id="LabelMonths" placeholder="e.g. 12">
             <br> <br>
 
-            <p id="Labels">Interest</p>
-            <input type="text" placeholder="e.g. 4%">
+            <!-- Creating a fixed interest rate label and a textbox for the interest number-->
+            <p id="Labels">Fixed Interest Rate %</p>
+            <input type="text" id="LabelInterest" placeholder="e.g. 4">
             <br> <br>
-
-            <button class="btn btn-positive btn-block">Calculate</button>
           </form>
+
+          <!-- Creating a button to calculate-->
+          <button class="btn btn-positive btn-block" onclick="calculate();">Calculate</button>
+
+          <!-- A div to put all the results in-->
+          <div id="Result"></div>
     </div>
 </body>
 </html>
