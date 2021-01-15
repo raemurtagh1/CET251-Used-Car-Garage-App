@@ -21,6 +21,19 @@
     <!-- Adding a service worker-->
     <link rel="serviceworker" href="serviceworker.js">
 
+    <script>
+        if (navigator.serviceWorker) {
+         navigator.serviceWorker.register('/serviceworker.js')
+         .then( function () {
+           console.log('Success!');
+         })
+         .catch( function () {
+           console.error('Failure!');
+         });
+         console.log('All done.');
+        }
+        </script>
+
     <!-- Added a padding on the content within the page, changed the label and description - font size and colour -->
     <style>
         .content
