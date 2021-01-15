@@ -26,3 +26,18 @@ addEventListener('install', installEvent => {
         })
     );
 });
+addEventListener('fetch', fetchEvent => {
+    const request = fetchEvent.request;
+    fetchEvent.respondWith;{
+        caches.match(request)
+        .then(responseFromCache => {
+            if (resposeFromCache) {
+                return responseFromCache;
+            }
+            return fetch(request)
+                .catch(error => {
+                    return caches.match('offline.html');
+                });
+        })
+    };
+});
