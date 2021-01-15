@@ -36,6 +36,7 @@
         {
             font-size: 16px;
             color: black;
+            margin-top: 16px;
         }
     </style>
 
@@ -80,14 +81,15 @@
             TotalToPayMonthly = parseFloat(parseFloat(TotalToPayMonthly).toFixed(2));
 
             // Displaying the results
-            document.getElementById("Result").innerHTML = "<br>" + "Interest: " + AmountofInterest + "<br> <br>" 
-            + "Amount with interest: " + AmountWithInterest + "<br> <br>" + "Total amount to pay monthly: "
+            document.getElementById("Result").innerHTML = "Interest: £" + AmountofInterest + "<br> <br>" 
+            + "Amount with interest: £" + AmountWithInterest + "<br> <br>" + "Total amount to pay monthly: £"
             + TotalToPayMonthly; 
         }
     </script>
 
     <!-- Creating a content class-->
     <div class="content">
+        <p id="description">Welcome! Please enter the amounts in whole numbers.</p>
         <br>
         <form>
             <!-- Creating an amount to borrow label and a textbox for the amount-->
