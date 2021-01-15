@@ -3,5 +3,59 @@
     "short_name": "The Little Hill Top Garage",
     "lang": "en",
     "start_url": "/",
-    "display": "standalone"
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "images/Car image 1 - small icon version",
+            "sizes": "60x60"
+        },
+        {
+            "src": "images/Car image 2 - small icon version",
+            "sizes": "60x60"
+        },
+        {
+            "src": "images/Car image 3 - small icon version",
+            "sizes": "60x60"
+        },
+        {
+            "src": "images/Car image 4 - small icon version",
+            "sizes": "60x60"
+        },
+        {
+            "src": "images/Car image 5 - small icon version",
+            "sizes": "60x60"
+        },
+        {
+            "src": "images/Car image 6 - small icon version",
+            "sizes": "60x60"
+        },
+        {
+            "src": "images/Car image 1 - pic for detail page",
+            "sizes": "330x330"
+        },
+        {
+            "src": "images/Car image 2 - pic for detail page",
+            "sizes": "330x330"
+        },
+        {
+            "src": "images/Car image 3 - pic for detail page",
+            "sizes": "330x330"
+        },
+        {
+            "src": "images/Car image 4 - pic for detail page",
+            "sizes": "330x330"
+        },
+        {
+            "src": "images/Car image 5 - pic for detail page",
+            "sizes": "330x330"
+        },
+        {
+            "src": "images/Car image 6 - pic for detail page",
+            "sizes": "330x330"
+        },
+        {
+            "src": "images/pexels-cottonbro-4488643",
+            "sizes": "375x668"
+        }
+    ]
 }
